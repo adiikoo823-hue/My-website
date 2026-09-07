@@ -1,13 +1,428 @@
-<!doctype html>
-<html lang="en">
+
+	
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="om">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization for Search Engines (Google, Bing) -->
+  <title>Haramaya Digital Hub - Gabaa Digital Teeknoolojii | ADINAN EBRAHIM</title>
+  <meta name="description" content="Gabaa Digital Haramaya Hub - Bittaafi gurgurtaa meeshaalee teeknoolojii, Laptops, Phones fi Accessories salphaatti bakka tokkotti. Developed & Managed by ADINAN EBRAHIM.">
+  <meta name="keywords" content="Haramaya, Haramaya Digital Hub, ADINAN EBRAHIM, Ecommerce Ethiopia, Buy Laptop Ethiopia, Telebirr, CBE">
+  <meta name="author" content="ADINAN EBRAHIM">
+
+  <!-- Social Media Sharing Meta Tags (WhatsApp, Telegram, Facebook Preview) -->
+  <meta property="og:title" content="Haramaya Digital Hub - Gabaa Teeknoolojii Online">
+  <meta property="og:description" content="Meeshaalee teeknoolojii gurgurachuu fi bitachuuf Haramaya Digital Hub fayyadamaa. Telebirr fi CBE integrated!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800">
+  <meta property="og:type" content="website">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f8fafc; color: #0f172a; display: flex; flex-direction: column; min-height: 100vh; }
+
+    .top-bar { background-color: #0284c7; color: white; text-align: center; padding: 8px 16px; font-size: 13px; font-weight: 600; }
+    .top-bar span { background-color: rgba(255, 255, 255, 0.2); padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+
+    .header-container { background-color: #0f172a; color: white; padding: 18px 40px; position: sticky; top: 0; z-index: 900; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+    .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .brand-section { display: flex; flex-direction: column; }
+    .logo { font-size: 24px; font-weight: 800; color: #38bdf8; text-decoration: none; }
+    .logo span { color: #ffffff; }
+    .owner-badge { font-size: 11px; color: #38bdf8; font-weight: bold; margin-top: 2px; }
+
+    .header-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .search-box { display: flex; background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; overflow: hidden; }
+    .search-input { padding: 10px 14px; font-size: 14px; width: 180px; border: none; background: transparent; color: white; outline: none; }
+    .search-btn { padding: 10px 14px; font-weight: bold; background-color: #0284c7; color: white; border: none; cursor: pointer; }
+
+    .action-btn { padding: 10px 14px; font-size: 13px; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+    .btn-sell { background-color: #16a34a; color: white; }
+    .btn-cart { background-color: #38bdf8; color: #0f172a; }
+    .btn-share { background-color: #25D366; color: white; } /* WhatsApp Green */
+    .cart-count { background-color: #ef4444; color: white; border-radius: 50%; padding: 2px 6px; font-size: 11px; }
+
+    .hero-section { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 40px 20px; text-align: center; border-bottom: 3px solid #0284c7; }
+    .hero-title { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .hero-subtitle { color: #94a3b8; font-size: 15px; max-width: 600px; margin: 0 auto 16px; }
+
+    .adsense-slot { max-width: 1200px; margin: 15px auto 0; padding: 12px; background-color: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; text-align: center; color: #64748b; font-size: 13px; font-weight: bold; }
+
+    .filter-section { max-width: 1200px; margin: 20px auto 10px; padding: 0 20px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 18px; border: 1px solid #cbd5e1; background-color: white; border-radius: 20px; font-size: 13px; font-weight: 600; color: #475569; cursor: pointer; }
+    .filter-btn.active, .filter-btn:hover { background-color: #0284c7; color: white; border-color: #0284c7; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px 20px 60px; flex-grow: 1; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+
+    .product-card { background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); overflow: hidden; position: relative; display: flex; flex-direction: column; border: 1px solid #e2e8f0; transition: transform 0.2s; }
+    .product-card:hover { transform: translateY(-4px); }
+    .badge-sponsored { position: absolute; top: 10px; right: 10px; background-color: #f59e0b; color: white; padding: 4px 8px; font-size: 10px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+
+    .product-image { width: 100%; height: 170px; object-fit: cover; }
+    .card-content { padding: 16px; display: flex; flex-direction: column; flex-grow: 1; }
+    .product-category { font-size: 11px; text-transform: uppercase; color: #0284c7; font-weight: bold; margin-bottom: 4px; }
+    .product-title { font-size: 16px; font-weight: bold; color: #0f172a; margin-bottom: 6px; }
+    .product-price { font-size: 18px; font-weight: 800; color: #16a34a; margin-bottom: 2px; }
+    .commission-tag { font-size: 11px; color: #0284c7; font-weight: bold; margin-bottom: 8px; }
+    .product-desc { font-size: 13px; color: #64748b; margin-bottom: 14px; line-height: 1.4; flex-grow: 1; }
+
+    .btn-add-cart { width: 100%; padding: 10px; background-color: #0284c7; color: white; font-weight: bold; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 6px; }
+    .btn-share-item { width: 100%; padding: 8px; background-color: #f1f5f9; color: #0f172a; font-size: 12px; font-weight: bold; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer; }
+
+    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.75); display: none; justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(4px); }
+    .modal-content { background: white; padding: 24px; border-radius: 12px; width: 90%; max-width: 480px; position: relative; max-height: 90vh; overflow-y: auto; }
+    .close-btn { position: absolute; top: 16px; right: 16px; border: none; background: none; font-size: 20px; cursor: pointer; color: #64748b; }
+
+    .form-group { margin-bottom: 12px; }
+    .form-group label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 4px; color: #334155; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none; }
+
+    .payment-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .payment-card { border: 2px solid #cbd5e1; padding: 12px; border-radius: 8px; text-align: center; cursor: pointer; font-size: 13px; font-weight: bold; }
+    .payment-card.selected { border-color: #0284c7; background-color: #f0f9ff; color: #0284c7; }
+
+    .payment-details-box { background-color: #f1f5f9; border: 1px dashed #0284c7; padding: 12px; border-radius: 8px; font-size: 13px; margin-bottom: 14px; line-height: 1.6; }
+
+    .btn-submit { width: 100%; padding: 12px; background-color: #16a34a; color: white; font-size: 14px; font-weight: bold; border: none; border-radius: 6px; cursor: pointer; }
+
+    .footer { background-color: #0f172a; color: #94a3b8; padding: 30px 20px 20px; text-align: center; font-size: 13px; border-top: 1px solid #1e293b; }
+    .footer-owner { color: #38bdf8; font-weight: bold; font-size: 14px; margin-bottom: 4px; }
+
+    .toast { position: fixed; bottom: 20px; right: 20px; background-color: #16a34a; color: white; padding: 12px 20px; border-radius: 8px; font-weight: bold; display: none; z-index: 1100; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  </style>
 </head>
 <body>
-	<button type="button">Hello</button>
-    <p>paragraph of text</p>
-    <a href="https://www.youtube.com">Link To YouTube</a>
+
+  <div class="top-bar">
+    👤 Owner: <b>ADINAN EBRAHIM</b> | 🏦 CBE: <b>1000574524192</b> | 📱 Telebirr: <b>0915572845</b> <span>Platform Fee: 3%</span>
+  </div>
+
+  <header class="header-container">
+    <div class="header-content">
+      <div class="brand-section">
+        <a href="#" class="logo">Haramaya <span>Digital Hub</span></a>
+        <div class="owner-badge">Platform Manager: ADINAN EBRAHIM</div>
+      </div>
+      <div class="header-controls">
+        <div class="search-box">
+          <input type="text" id="searchInput" class="search-input" placeholder="Oomisha barbaadi...">
+          <button class="search-btn" onclick="filterProducts()">Barbaadi</button>
+        </div>
+        <button class="action-btn btn-share" onclick="shareWebsite()">🔗 Share</button>
+        <button class="action-btn btn-sell" onclick="openModal('sellModal')">+ Maxxansi</button>
+        <button class="action-btn btn-cart" onclick="openModal('cartModal')">
+          🛒 Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <h1 class="hero-title">Gabaa Digital Haramaya Hub</h1>
+    <p class="hero-subtitle">Bittaafi gurgurtaa meeshaalee teeknoolojii saffisaa fi amansiisaa (Komishiniin System %3 qofa).</p>
+    <button class="action-btn btn-share" style="margin: 0 auto; padding: 12px 24px; font-size: 15px;" onclick="shareWebsite()">📲 Saayitii Kana WhatsApp/Telegram'n Ergi</button>
+  </section>
+
+  <div class="adsense-slot">
+    📢 Google AdSense / Beeksisa Sponsor (Space for Google SEO & Ads)
+  </div>
+
+  <div class="filter-section">
+    <button class="filter-btn active" onclick="filterCategory('all', this)">Hunda</button>
+    <button class="filter-btn" onclick="filterCategory('laptop', this)">Laptops</button>
+    <button class="filter-btn" onclick="filterCategory('phone', this)">Phones</button>
+    <button class="filter-btn" onclick="filterCategory('accessory', this)">Accessories</button>
+  </div>
+
+  <main class="container">
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+
+  <!-- SELL MODAL -->
+  <div class="modal-overlay" id="sellModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('sellModal')">✕</button>
+      <h3 style="margin-bottom: 14px;">Oomisha Maxxansi</h3>
+      <form onsubmit="addNewProduct(event)">
+        <div class="form-group">
+          <label>Maqaa Oomishaa</label>
+          <input type="text" id="newTitle" required placeholder="fakk. HP EliteBook 840">
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select id="newCategory">
+            <option value="laptop">Laptop</option>
+            <option value="phone">Phone</option>
+            <option value="accessory">Accessory</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Gatii Oomishaa (ETB)</label>
+          <input type="number" id="newPrice" required placeholder="35000" oninput="calculateCommission(this.value)">
+        </div>
+        <div style="font-size: 11px; color: #0284c7; font-weight: bold; margin-bottom: 12px;">
+          💡 Komishinii System (3%): <span id="calcCommission">0 ETB</span>
+        </div>
+        <div class="form-group">
+          <label>URL Fakkii (Image Link)</label>
+          <input type="url" id="newImg" placeholder="https://images.unsplash.com/..." value="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400">
+        </div>
+        <div class="form-group">
+          <label>Option Beeksisaa</label>
+          <select id="isSponsored">
+            <option value="false">Normal Listing (3% Commission)</option>
+            <option value="true">⭐ VIP Sponsored (+200 ETB Fee)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Ibsa Oomishaa</label>
+          <textarea id="newDesc" rows="2" required placeholder="Haala meeshaa..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Cloud'atti Maxxansi</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('cartModal')">✕</button>
+      <h3 style="margin-bottom: 14px;">Checkout & Kaffaltii</h3>
+      
+      <div id="cartItems" style="margin-bottom: 14px; max-height: 120px; overflow-y: auto;"></div>
+      
+      <div style="background: #f1f5f9; padding: 10px; border-radius: 6px; margin-bottom: 14px; font-size: 13px;">
+        <div>Subtotal: <b id="cartSubtotal">0 ETB</b></div>
+        <div>Komishinii Platform (3%): <b id="cartCommission" style="color: #0284c7;">0 ETB</b></div>
+        <hr style="margin: 6px 0;">
+        <div style="font-size: 15px;">Gatii Waliigalaa: <b id="cartTotal" style="color: #16a34a;">0 ETB</b></div>
+      </div>
+
+      <div class="form-group">
+        <label>Mala Kaffaltii Filadhu</label>
+        <div class="payment-options">
+          <div class="payment-card selected" onclick="selectPayment(this, 'Telebirr')">📱 Telebirr</div>
+          <div class="payment-card" onclick="selectPayment(this, 'CBE')">🏦 CBE Bank</div>
+        </div>
+      </div>
+
+      <div class="payment-details-box" id="paymentDetails">
+        <b>📱 Telebirr Details:</b><br>
+        • Lakkoofsa Telebirr: <b>0915572845</b><br>
+        • Maqaa Account: <b>ADINAN EBRAHIM</b>
+      </div>
+
+      <div class="form-group">
+        <label>Lakkoofsa Bilbilaa (Kaffaltiif)</label>
+        <input type="tel" id="userPhone" placeholder="0912345678" required>
+      </div>
+
+      <button class="btn-submit" onclick="processPayment()">Kaffaltii Xumuri & Risiitii Fudhadhu</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Ergaa</div>
+
+  <footer class="footer">
+    <div class="footer-owner">Haramaya Digital Hub | Developed & Managed by ADINAN EBRAHIM</div>
+    <p>© 2026. CBE Account: 1000574524192 | Telebirr: 0915572845</p>
+  </footer>
+
+  <script>
+    let products = [
+      { id: 1, title: "MacBook Pro Core i7", category: "laptop", price: 45000, desc: "RAM 16GB, SSD 512GB.", img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400", sponsored: true },
+      { id: 2, title: "iPhone 15 Pro Max", category: "phone", price: 110000, desc: "Storage 256GB, Battery 98%.", img: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400", sponsored: false },
+      { id: 3, title: "Wireless Gaming Headset", category: "accessory", price: 3500, desc: "Bass Bluetooth 5.2 headphone.", img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400", sponsored: false }
+    ];
+
+    let cart = [];
+    let selectedMethod = "Telebirr";
+
+    function renderProducts(items = products) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+
+      items.forEach(p => {
+        const comm = p.price * 0.03;
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          ${p.sponsored ? '<span class="badge-sponsored">⭐ VIP Sponsored</span>' : ''}
+          <img class="product-image" src="${p.img}" alt="${p.title}">
+          <div class="card-content">
+            <span class="product-category">${p.category}</span>
+            <h2 class="product-title">${p.title}</h2>
+            <div class="product-price">${p.price.toLocaleString()} ETB</div>
+            <div class="commission-tag">+ 3% Commission (${comm.toLocaleString()} ETB)</div>
+            <p class="product-desc">${p.desc}</p>
+            <button class="btn-add-cart" onclick="addToCart('${p.title}', ${p.price})">Cart'tti Dabali</button>
+            <button class="btn-share-item" onclick="shareProduct('${p.title}', ${p.price})">📤 Oomisha Kana Share Godhi</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    /* Instant Sharing Functions */
+    function shareWebsite() {
+      const shareData = {
+        title: 'Haramaya Digital Hub',
+        text: 'Haramaya Digital Hub - Gabaa teeknoolojii amansiisaa ADINAN EBRAHIM\'n ijaarame! Bittaafi gurgurtaaf linkii kana tuqa:',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        navigator.share(shareData);
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        showToast("🔗 Linkiin saayitiichaa kopy ta'eera!");
+      }
+    }
+
+    function shareProduct(title, price) {
+      const msg = `Oomisha kana Haramaya Digital Hub irratti ilaalaa: ${title} - Gatii: ${price.toLocaleString()} ETB. Linkii saayitii: ${window.location.href}`;
+      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    function addToCart(title, price) {
+      cart.push({ title, price });
+      document.getElementById('cartCount').innerText = cart.length;
+      updateCartModal();
+      showToast("🛒 " + title + " Cart'tti dabalameera!");
+    }
+
+    function updateCartModal() {
+      const cartItemsDiv = document.getElementById('cartItems');
+      cartItemsDiv.innerHTML = '';
+      let subtotal = 0;
+
+      cart.forEach((item) => {
+        subtotal += item.price;
+        cartItemsDiv.innerHTML += `
+          <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:13px;">
+            <span>${item.title}</span>
+            <b>${item.price.toLocaleString()} ETB</b>
+          </div>
+        `;
+      });
+
+      const commission = subtotal * 0.03;
+      const total = subtotal + commission;
+
+      document.getElementById('cartSubtotal').innerText = subtotal.toLocaleString() + " ETB";
+      document.getElementById('cartCommission').innerText = commission.toLocaleString() + " ETB";
+      document.getElementById('cartTotal').innerText = total.toLocaleString() + " ETB";
+    }
+
+    function calculateCommission(val) {
+      const p = parseFloat(val) || 0;
+      document.getElementById('calcCommission').innerText = (p * 0.03).toLocaleString() + " ETB";
+    }
+
+    function selectPayment(element, method) {
+      document.querySelectorAll('.payment-card').forEach(el => el.classList.remove('selected'));
+      element.classList.add('selected');
+      selectedMethod = method;
+
+      const detailsBox = document.getElementById('paymentDetails');
+      if (method === 'Telebirr') {
+        detailsBox.innerHTML = `
+          <b>📱 Telebirr Details:</b><br>
+          • Lakkoofsa Telebirr: <b>0915572845</b><br>
+          • Maqaa Account: <b>ADINAN EBRAHIM</b>
+        `;
+      } else {
+        detailsBox.innerHTML = `
+          <b>🏦 CBE Bank Details:</b><br>
+          • Lakkoofsa Account CBE: <b>1000574524192</b><br>
+          • Maqaa Account: <b>ADINAN EBRAHIM</b><br>
+          • Baankii: <b>Commercial Bank of Ethiopia</b>
+        `;
+      }
+    }
+
+    function processPayment() {
+      const phone = document.getElementById('userPhone').value;
+      if (cart.length === 0) {
+        alert("Cart'n keessan duudaadha!");
+        return;
+      }
+      if (!phone) {
+        alert("Maaloo lakkoofsa bilbilaa keessan galchaa!");
+        return;
+      }
+
+      let subtotal = cart.reduce((acc, i) => acc + i.price, 0);
+      let comm = subtotal * 0.03;
+      let total = subtotal + comm;
+
+      closeModal('cartModal');
+
+      let receiptMsg = `🧾 RISIITII KAFFALTII (RECEIPT)\n`;
+      receiptMsg += `------------------------------------\n`;
+      receiptMsg += `Owner: ADINAN EBRAHIM\n`;
+      receiptMsg += `Mala Kaffaltii: ${selectedMethod}\n`;
+      receiptMsg += `Bilbila Bittaa: ${phone}\n`;
+      receiptMsg += `Gatii Oomishaa: ${subtotal.toLocaleString()} ETB\n`;
+      receiptMsg += `Komishinii Platform (3%): ${comm.toLocaleString()} ETB\n`;
+      receiptMsg += `Waliigala Kaffaltii: ${total.toLocaleString()} ETB\n`;
+      receiptMsg += `------------------------------------\n`;
+      if(selectedMethod === 'Telebirr') {
+        receiptMsg += `Maaloo maallaqa kana gara Telebirr: 0915572845 (ADINAN EBRAHIM) 'ti ergaa.`;
+      } else {
+        receiptMsg += `Maaloo maallaqa kana gara CBE Account: 1000574524192 (ADINAN EBRAHIM) 'ti ergaa.`;
+      }
+
+      alert(receiptMsg);
+      cart = [];
+      document.getElementById('cartCount').innerText = 0;
+    }
+
+    function addNewProduct(e) {
+      e.preventDefault();
+      const newObj = {
+        id: Date.now(),
+        title: document.getElementById('newTitle').value,
+        category: document.getElementById('newCategory').value,
+        price: parseFloat(document.getElementById('newPrice').value),
+        img: document.getElementById('newImg').value,
+        sponsored: document.getElementById('isSponsored').value === "true",
+        desc: document.getElementById('newDesc').value
+      };
+
+      products.unshift(newObj);
+      renderProducts();
+      closeModal('sellModal');
+      showToast("☁️ Maxxansiin haaraa komishinii %3 wajjin dabalameera!");
+      e.target.reset();
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if (cat === 'all') renderProducts(products);
+      else renderProducts(products.filter(p => p.category === cat));
+    }
+
+    function filterProducts() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      renderProducts(products.filter(p => p.title.toLowerCase().includes(q)));
+    }
+
+    function openModal(id) { document.getElementById(id).style.display = 'flex'; }
+    function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+    
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }
+
+    renderProducts();
+  </script>
 </body>
 </html>
